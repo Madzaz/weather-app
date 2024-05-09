@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main>
+      <section class="infoSection">
+        <h1 id="cityName">Amsterdam</h1>
+        <p id="cityTemp">20°</p>
+        <p id="weather">Sunny</p>
+        <div class="highestAndLowest">
+          <p id="highTemp">H:25°</p>
+          <p id="lowTemp">L:</p>
+        </div>
+      </section>
+
+      <section class="weatherInfo">
+        <div class="dailyWeather">
+          <div>
+            <button id="dropdownMenu"></button>
+          </div>
+
+          <div class="changeForecast">
+            <p id="hourlyForecast">Hourly Forecast</p>
+            <p id="weeklyForecast">Weekly Forecast</p>
+          </div>
+        </div>
+
+        <div class="daysDiv">
+          <div class="weekDaysDiv lastDay">
+            <p class="time">12:00</p>
+            <img
+              class="weatherIcon"
+              src="images/rain.png"
+              width="50px"
+              alt="Weather Icon"
+            />
+            <p class="rainChance">30%</p>
+            <p class="temp">20°</p>
+          </div>
+
+          <div
+            class="weekDaysDiv dayNow"
+            style="background-color: hsl(240, 80%, 20%)"
+          >
+            <p class="time">NOW</p>
+            <img class="weatherIcon" width="50px" alt="Weather Icon" />
+            <p class="rainChance">30%</p>
+            <p class="temp">20°</p>
+          </div>
+
+          <div class="weekDaysDiv dayOne">
+            <p class="time">14:00</p>
+            <img
+              class="weatherIcon"
+              src="images/rain.png"
+              width="50px"
+              alt="Weather Icon"
+            />
+            <p class="rainChance">30%</p>
+            <p class="temp">20°</p>
+          </div>
+
+          <div class="weekDaysDiv dayTwo">
+            <p class="time">18:00</p>
+            <img
+              class="weatherIcon"
+              src="images/rain.png"
+              width="50px"
+              alt="Weather Icon"
+            />
+            <p class="rainChance">30%</p>
+            <p class="temp">20°</p>
+          </div>
+
+          <div class="weekDaysDiv dayThree">
+            <p class="time">22:00</p>
+            <img
+              class="weatherIcon"
+              src="images/rain.png"
+              width="50px"
+              alt="Weather Icon"
+            />
+            <p class="rainChance">30%</p>
+            <p class="temp">20°</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
